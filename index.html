@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Game of Life</title>
+
+    <link rel="stylesheet" href="game_of_life.css">
+  </head>
+
+  <body>
+    <h1 id="title">Conway's Game of Life</h1>
+
+    <hr>
+
+    <h2> So, What's Going On Here? </h2>
+
+<ul id="directions"> 
+  <li> We have two types of square, <em id="alive">alive</em> and <em id="dead">dead</em> </li>
+  <li>When you click the play button, the board determined which squares are alive for the next generation by the following rules:
+    <ul>
+      <li>Alive squares with less than 2 neighbors die, as if by underpopulation</li>
+      <li>Alive squares with more than 3 neighbors die, as if by overpopulation </li>
+      <li>Dead squares with exactly 3 neighbors come to life, as if by reproduction </li>
+      <li>All other squares keep their present status for the next generation</li>
+    </ul>
+  </li>
+  <li>Clicking a square switches it from alive to dead or dead to alive </li>
+  <li>Pressing the clear button sets all squares on the board to dead</li>
+
+</ul>
+
+
+
+
+<hr id="divider2">
+
+  <section class="gameBoard">
+  </section>
+
+<button id="play" class="button"> Play </button>
+<button id="clear" class="button"> Clear </button>
+
+
+    <script src="game_of_life.js"></script> 
+  </body>
+</html>
